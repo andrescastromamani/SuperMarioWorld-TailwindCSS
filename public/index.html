@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class=mx-auto">
+        <nav class="bg-gray-900 flex lg:justify-start justify-between items-center">
+            <div class="logo p-2">
+                <img src="img/logo.png" width="100" alt="image">
+            </div>
+            <div class="links lg:block hidden w-1/6 md:w-4/6">
+                <ul class="menu flex items-center justify-center gap-5">
+                    <li><a href="#" class="link">Home</a></li>
+                    <li><a href="#" class="link">Play</a></li>
+                    <li><a href="#" class="link">Explore</a></li>
+                    <li><a href="#"
+                            class="border-4 text-white border-yellow-500 p-2 font-bold rounded-full hover:text-yellow-500 transition duration-500">Browser
+                            Fury</a></li>
+                    <li><a href="#"
+                            class="bg-red-500 py-3 px-4 text-white hover:text-black font-bold hover:bg-white rounded-full transition duration-500 ">Buy
+                            Now</a></li>
+                </ul>
+            </div>
+            <div class="block lg:hidden w-1/6 lg:w-4/6">
+                <a href="#" class="link" id="mobile-menu">Menu</a>
+                <ul class="mobile-links hidden w-full absolute z-50 left-0 text-center bg-gray-800">
+                    <li><a href="#" class="link">Home</a></li>
+                    <li><a href="#" class="link">Play</a></li>
+                    <li><a href="#" class="link">Explore</a></li>
+                    <li><a href="#"
+                            class="my-4 inline-block border-4 text-white border-yellow-400 p-2 font-bold rounded-full hover:text-yellow-500 transition duration-500">Browser
+                            Fury</a></li>
+                    <li><a href="#"
+                            class="my-4 inline-block bg-red-500 py-3 px-4 text-white hover:text-black font-bold hover:bg-white rounded-full transition duration-500 ">Buy
+                            Now</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <script>
+        const  mobileMenu = document.querySelector('#mobile-menu');
+        mobileMenu.addEventListener('click', () => {
+            const mobileLinks = document.querySelector('.mobile-links');
+            mobileLinks.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
