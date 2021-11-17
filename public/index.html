@@ -48,10 +48,18 @@
         </section>
         <section>
             <div class="bg-wave-pattern h-6 bg-repeat-x relative -top-2"></div>
+            <div class="bg-wave-pattern-dots text-center p-4 flex md:flex-row flex-col gap-6 justify-center">
+                <a href="" class="inline-block py-3 px-16 bg-black text-white  font-bold rounded-full">Waasjad</a>
+                <a href="" class="inline-block py-3 px-16 bg-red-500 text-white  font-bold rounded-full">Waasjad</a>
+            </div>
+            <div class="bg-wave-pattern bg-repeat-x relative  h-6 top-2"></div>
+        </section>
+        <section class="bg-red-500 h-6">
+
         </section>
     </div>
     <script>
-        const  mobileMenu = document.querySelector('#mobile-menu');
+        const mobileMenu = document.querySelector('#mobile-menu');
         mobileMenu.addEventListener('click', () => {
             const mobileLinks = document.querySelector('.mobile-links');
             mobileLinks.classList.toggle('hidden');
